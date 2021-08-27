@@ -5,6 +5,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+/* holds environment variables */
+extern char **environ;
+
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);
 int _putchar(char c);
