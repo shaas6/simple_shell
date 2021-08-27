@@ -7,25 +7,19 @@
 
 int main(int ac __attribute__((unused)), char **av)
 {
-    char buf[900];
     char *input;
     size_t size;
     ssize_t stat;
 
+    (void) av;
     while (1)
     {
+        new_prompt();
         stat = getline(&input, &size, stdin);
-        if (_strlen(input==0))
+         
+        if(_strcmp(input,"exit\n")==0)
         {
-                    _strcpy(buf,"\n");
-        }
-        else     
-        {
-            _strcpy(buf, input);
-        }   
-        if(_strcmp(input,"exit")==0)
-        {
-            exit(0);
+            exit(1);
         }
     }
 }
