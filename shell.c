@@ -22,7 +22,7 @@ int main(int ac __attribute__((unused)), char **av, char **env)
         new_prompt();
         stat = getline(&input, &size, stdin);
          if (stat == -1)
-                exit(1);
+                perror("Error");
 
         if(_strcmp(input,"exit\n")==0)
         {
