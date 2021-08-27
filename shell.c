@@ -4,12 +4,13 @@
 /**
  * the simplest of shells 
  */
-int main(int ac __attribute__((unused)), char **av)
+int main(int ac __attribute__((unused)), char **av, char **env)
 {
+    
     char *input = NULL;
     size_t size;
     ssize_t stat;
-    int tty = 0;
+    
 
     (void) av;
 
@@ -27,7 +28,8 @@ int main(int ac __attribute__((unused)), char **av)
         {
             exit(0);
         }
+        else if(_strcmp(input,"env\n")==0)
+            print_env(env);
     }
-
-
 }
+  
