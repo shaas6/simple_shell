@@ -15,13 +15,13 @@ int main(int ac __attribute__((unused)), char **av)
     while (1)
     {
         stat = getline(&input, &size, stdin);
-        if (strlen(input==0))
+        if (_strlen(input==0))
         {
-                    strcpy(buf,"\n");
+                    _strcpy(buf,"\n");
         }
         else     
         {
-            strcpy(buf, input);
+            _strcpy(buf, input);
         }   
         if(_strcmp(input,"exit")==0)
         {
