@@ -14,5 +14,6 @@ int _putchar(char c);
 void _puts(char *str);
 int _strlen(char *s);
 void new_prompt(void);
+void print_env(char **env);
 
 #endif
