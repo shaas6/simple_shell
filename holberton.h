@@ -5,7 +5,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-
+int _strcmp(char *s1, char *s2);
+char *_strcpy(char *dest, char *src);
 int _putchar(char c);
 void _puts(char *str);
 int _strlen(char *s);
