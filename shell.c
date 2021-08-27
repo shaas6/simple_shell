@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * the simplest of shells 
+ * the simplest of shells
+ * erroneous comment 
  */
 
 int main(int ac, char **av)
