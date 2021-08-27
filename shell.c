@@ -5,16 +5,15 @@
  * erroneous comment 
  */
 
-int main(int ac, char **av)
+int main(int ac __attribute__((unused)), char **av)
 {
     char *input;
     size_t size;
-    ssize_t status;
     
     while (1)
     {
-        status = getline(&input, &size, stdin);
-        if (status == -1)
+        **av = getline(&input, &size, stdin);
+        if (**av == -1)
          {  
             perror("Input error");
          }
