@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * the simplest of shells
- * erroneous comment 
+ * the simplest of shells 
  */
 
 int main(int ac __attribute__((unused)), char **av)
@@ -24,7 +23,7 @@ int main(int ac __attribute__((unused)), char **av)
         {
             strcpy(buf, input);
         }   
-        if(strcomp(input,"exit")==0)
+        if(_strcmp(input,"exit")==0)
         {
             exit(0);
         }
