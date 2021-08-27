@@ -6,11 +6,16 @@
  */
 int main(int ac __attribute__((unused)), char **av)
 {
-    char *input;
+    char *input = NULL;
     size_t size;
     ssize_t stat;
+    int tty = 0;
 
     (void) av;
+
+    if (isatty(STDIN_FILENO)== 1)
+            
+    
     while (1)
     {
         new_prompt();
@@ -22,9 +27,6 @@ int main(int ac __attribute__((unused)), char **av)
         {
             exit(0);
         }
-        if (isatty(STDIN_FILENO)== 1)
-        _puts(input);
-
     }
 
 
