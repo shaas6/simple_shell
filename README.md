@@ -37,3 +37,5 @@ new_prompt.c
 holberton.h
 
 man_1_simple_shell
+
+**This repository was created by and contributed to by Darwin Delgado and Sean Haas.**
