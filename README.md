@@ -9,9 +9,11 @@ If compilation is successful, run the program by typing ./shell into your termin
 
 ## Builtins: 
 env: prints environment variables
+
 exit: exits the program
 
 Example 1: env<Return> prints all environment variables, one per line
+
 Example 2: exit<Return> ends the program and returns to location program was run from
 
 ## Files:
