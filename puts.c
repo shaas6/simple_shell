@@ -7,9 +7,9 @@
  */
 void _puts(char *str)
 {
-    while (*str != 0) /* loop through char array by pointer */
-    {
-        _putchar(*str);
-        str++;
-    }
+	while (*str != 0) /* loop through char array by pointer */
+	{
+		_putchar(*str);
+		str++;
+	}
 }
