@@ -12,18 +12,27 @@ env: prints environment variables
 
 exit: exits the program
 
-Example 1: env<Return> prints all environment variables, one per line
+Example 1: env(Enter) prints all environment variables, one per line
 
-Example 2: exit<Return> ends the program and returns to location program was run from
+Example 2: exit(Enter) ends the program and returns to location program was run from
 
 ## Files:
 shell.c
+
 strcmp.c
+
 strcpy.c
+
 strlen.c
+
 puts.c
+
 putchar.c
+
 printenv.c
+
 new_prompt.c
+
 holberton.h
+
 man_1_simple_shell
