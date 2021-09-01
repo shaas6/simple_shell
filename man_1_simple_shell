@@ -46,10 +46,14 @@ Description of -b flag
 .\" .El
 .Sh FILES                \" File used or created by the topic of the man page
 .Bl -tag -width "/Users/joeuser/Library/really_long_file_name" -compact
-.It Pa /usr/share/file_name
+.It Pa shell.c
 FILE_1 description
-.It Pa /Users/joeuser/Library/really_long_file_name
+.It Pa new_prompt.c
 FILE_2 description
+.It Pa printenv.c
+FILE_3 description
+.It Pa holberton.h
+FILE_4 description
 .El                      \" Ends the list
 .\" .Sh DIAGNOSTICS       \" May not be needed
 .\" .Bl -diag
