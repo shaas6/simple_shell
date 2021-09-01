@@ -5,6 +5,7 @@ Our repository contains a basic iteration of a shell for command line interactio
 To use our shell: You'll need a clone of the repository, and must also be able to use the gcc command.
 Copy and paste this into your terminal:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c holberton.h -o shell
+
 If compilation is successful, run the program by typing ./shell into your terminal
 
 ## Builtins: 
