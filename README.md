@@ -8,13 +8,13 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c holberton.h -o shell
 If compilation is successful, run the program by typing ./shell into your terminal
 
 ## Builtins: 
-env: prints environment variables
+**env**: prints environment variables
 
-exit: exits the program
+**exit**: exits the program
 
-Example 1: env(Enter) prints all environment variables, one per line
+*Example 1*: env(Enter) prints all environment variables, one per line
 
-Example 2: exit(Enter) ends the program and returns to location program was run from
+*Example 2*: exit(Enter) ends the program and returns to location program was run from
 
 ## Files:
 shell.c
