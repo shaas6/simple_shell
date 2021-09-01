@@ -47,13 +47,13 @@ Description of -b flag
 .Sh FILES                \" File used or created by the topic of the man page
 .Bl -tag -width "/Users/joeuser/Library/really_long_file_name" -compact
 .It Pa shell.c
-FILE_1 description
+FILE_1 Main shell program
 .It Pa new_prompt.c
-FILE_2 description
+FILE_2 Prompts the user for input
 .It Pa printenv.c
-FILE_3 description
+FILE_3 Prints the environment variables
 .It Pa holberton.h
-FILE_4 description
+FILE_4 Header file for source libraries, prototypes etc.
 .El                      \" Ends the list
 .\" .Sh DIAGNOSTICS       \" May not be needed
 .\" .Bl -diag
