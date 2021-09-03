@@ -4,7 +4,7 @@
 .\"man mdoc for the short list of editing options
 .\"/usr/share/misc/mdoc.template
 .Dd 9/2/21               \" DATE
-.Dt Shell1)      \" Program name and manual section number
+.Dt Shell(1)      \" Program name and manual section number
 .Os Darwin Delgado, Sean Haas
 .Sh Shell                \" Section Header - required - don't modify
 .Nm Shell- a simplified, limited-capability command line interpreter

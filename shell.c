@@ -44,7 +44,7 @@ int main(int ac __attribute__((unused)), char **av, char **env)
     {
         if (isatty(STDIN_FILENO))
 				write(STDOUT_FILENO, "\n", 1);
-			exit(_exit);
+			exit(end);
     }
     free(getinput);
     }
