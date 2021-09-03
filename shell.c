@@ -10,28 +10,34 @@
 */
 int main(int ac __attribute__((unused)), char **av, char **env)
 {
-char *getinput = NULL, **userinput = NULL;
-int pathvalue = 0, _exit = 0;
+    char *getinput = NULL, **userinput = NULL;
+    int pathvalue = 0, end = 0, n = 0;
 
-(void) av;
+(void) ac;
 
     while (1)
     {
-    getinput = _getline();
+        getinput = _getline();
         if (getinput)
         {
-        pathvalue++;
-        userinput = get_token(getinput);
-        if (!userinput)
+            pathvalue++;
+            userinput = get_token(getinput);
+            if (!userinput)
             {
                 free(getinput);
                 continue;
             }
         if (!_strcmp(userinput[0], "exit") && userinput[1] == NULL)
-            _exitshell(userinput, getinput, _exit);
+            _exitshell(userinput, getinput, end);
         if (!_strcmp(userinput[0], "env"))
             print_env(env);
-
+        else
+        {
+            n = path_value(&userinput[0], env);
+            end = fork_func(userinput, av, env, getinput, pathvalue, n);
+            if (n == 0)
+                    free(userinput[0]);
+        }
         free(userinput);
     }
     else
