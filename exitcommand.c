@@ -8,19 +8,19 @@
  * Return: nothing
  */
 
-void _exitshell(char **what, char *linepointer, int end)
+void _exitshell(char **arguments, char *linepointer, int end)
 {
 	int status = 0;
 
-	if (!what[1])
+	if (!arguments[1])
 	{
 		free(linepointer);
-		free(what);
+		free(arguments);
 		exit(end);
 	}
 	status = atoi(what[1]);
 
 	free(linepointer);
-	free(what);
+	free(arguments);
 	exit(end);
 }
