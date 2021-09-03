@@ -13,7 +13,7 @@
 /* holds environment variables */
 extern char **environ;
 
-void _exitshell(char **what, char *ptr, int end);
+void _exitshell(char **what, char *linepointer, int end);
 
 int _putchar(char c);
 void _puts(char *str);
