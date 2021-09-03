@@ -18,7 +18,7 @@ void _exitshell(char **arguments, char *linepointer, int end)
 		free(arguments);
 		exit(end);
 	}
-	status = atoi(what[1]);
+	status = atoi(arguments[1]);
 
 	free(linepointer);
 	free(arguments);
