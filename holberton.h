@@ -13,7 +13,7 @@
 /* holds environment variables */
 extern char **environ;
 int path_value(char **arg, char **env);
-void _exitshell(char **what, char *linepointer, int end);
+void _exitshell(char **arguments, char *linepointer, int end);
 int fork_func(char **arg, char **av, char **env, char *linepointer, int id, int c);
 int _putchar(char c);
 void _puts(char *str);
