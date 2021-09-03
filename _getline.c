@@ -10,7 +10,7 @@ char *_getline(void)
     size_t user = 0;
 
     if (isatty(STDIN_FILENO))
-        write(STDOUT_FILENO, "shell$ ", 14);
+        write(STDOUT_FILENO, "shell$ ", 7);
 
     if (getline(&linepointer, &user, stdin) == -1)
     {
