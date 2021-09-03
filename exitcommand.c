@@ -10,17 +10,17 @@
 
 void _exitshell(char **what, char *ptr, int end)
 {
-    int status = 0;
+	int status = 0;
 
-    if (!what[1])
-    {
-        free(ptr);
-        free(what);
-        exit(end);
-    }
-    status = atoi(what[1]);
+	if (!what[1])
+	{
+		free(ptr);
+		free(what);
+		exit(end);
+	}
+	status = atoi(what[1]);
 
-    free(ptr);
-    free(what);
-    exit(end);
+	free(ptr);
+	free(what);
+	exit(end);
 }

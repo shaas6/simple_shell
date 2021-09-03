@@ -8,6 +8,7 @@
 /* holds environment variables */
 extern char **environ;
 
+void _exitshell(char **what, char *ptr, int end);
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);
 int _putchar(char c);
