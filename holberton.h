@@ -9,12 +9,16 @@
 extern char **environ;
 
 void _exitshell(char **what, char *ptr, int end);
-int _strcmp(char *s1, char *s2);
-char *_strcpy(char *dest, char *src);
+
 int _putchar(char c);
 void _puts(char *str);
-int _strlen(char *s);
 void new_prompt(void);
 void print_env(char **env);
+
+/* string function */
+int _strcmp(char *s1, char *s2);
+char *_strcpy(char *dest, char *src);
+int _strlen(char *s);
+char *str_concat(char *s1, char *s2);
 
 #endif
