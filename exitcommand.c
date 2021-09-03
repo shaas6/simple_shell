@@ -8,7 +8,7 @@
  * Return: nothing
  */
 
-void _exitshell(char **what, char *lineptr, int end)
+void _exitshell(char **what, char *linepointer, int end)
 {
 	int status = 0;
 
