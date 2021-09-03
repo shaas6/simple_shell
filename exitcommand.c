@@ -14,13 +14,13 @@ void _exitshell(char **what, char *linepointer, int end)
 
 	if (!what[1])
 	{
-		free(lineptr);
+		free(linepointer);
 		free(what);
 		exit(end);
 	}
 	status = atoi(what[1]);
 
-	free(lineptr);
+	free(linepointer);
 	free(what);
 	exit(end);
 }
