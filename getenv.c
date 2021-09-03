@@ -11,6 +11,6 @@ size_t count = 0;
 	{
 		write(STDOUT_FILENO, env[count], _strlen(env[count]));
 		write(STDOUT_FILENO, "\n", 1);
-		run++;
+		count++;
 	}
 }
