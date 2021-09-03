@@ -20,6 +20,7 @@ void _puts(char *str);
 void new_prompt(void);
 void print_env(char **env);
 char **get_token(char *linepointer);
+char *_getline(void)
 /* string function */
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);
