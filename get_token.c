@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * 
- * 
- * 
+ * get_token - get token of string
+ * @linepointer: command user
+ * Return: to a pointer
  */
 
 char **get_token(char *linepointer)
