@@ -12,17 +12,19 @@
 
 /* holds environment variables */
 extern char **environ;
-
+int path_value(char **arg, char **env);
 void _exitshell(char **what, char *linepointer, int end);
-
+int fork_func(char **arg, char **av, char **env, char *linepointer, int id, int c);
 int _putchar(char c);
 void _puts(char *str);
 void new_prompt(void);
 void print_env(char **env);
 char **get_token(char *linepointer);
 char *_getline(void);
+char *getpath(char **env);
 /* string function */
 int _strcmp(char *s1, char *s2);
+size_t _strncmp(char *s1, char *s2, size_t n);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
 char *str_concat(char *s1, char *s2);
