@@ -1,9 +1,8 @@
 #include "holberton.h"
-
 /**
  * _exitshell - exits the shell
- * @lineptr: input
- * @what: arguement pointer
+ * @linepointer: input
+ * @arg: argument pointer
  * @end: exit value
  * Return: nothing
  */
