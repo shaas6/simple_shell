@@ -17,5 +17,5 @@ char *_getline(void)
         free(linepointer);
         return (NULL);
     }
-    return (linepointer)
+    return (linepointer);
 }
