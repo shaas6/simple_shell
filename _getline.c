@@ -5,16 +5,16 @@
  */
 char *_getline(void)
 {
-	char *linepointer = NULL;
+	char *lineptr = NULL;
 	size_t user = 0;
 
 	if (isatty(STDIN_FILENO))
 	write(STDOUT_FILENO, "shell$ ", 7);
 
-	if (getline(&linepointer, &user, stdin) == -1)
+	if (getline(&lineptr, &user, stdin) == -1)
 	{
-		free(linepointer);
+		free(lineptr);
 		return (NULL);
 	}
-	return (linepointer);
+	return (lineptr);
 }
