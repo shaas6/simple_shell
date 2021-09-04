@@ -28,7 +28,7 @@ int fork_func(char **arg, char **av, char **env, char *lineptr, int id, int c)
 			if (!c)
 				free(arg[0]);
 			free(arg);
-			free(linepointer);
+			free(lineptr);
 			exit(errno);
 		}
 	}

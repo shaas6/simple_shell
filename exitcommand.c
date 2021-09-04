@@ -1,25 +1,25 @@
 #include "holberton.h"
 /**
  * _exitshell - exits the shell
- * @linepointer: input
+ * @lineptr: input
  * @arg: argument pointer
  * @end: exit value
  * Return: nothing
  */
 
-void _exitshell(char **arg, char *linepointer, int end)
+void _exitshell(char **arg, char *lineptr, int end)
 {
 	int status = 0;
 
 	if (!arg[1])
 	{
-		free(linepointer);
+		free(lineptr);
 		free(arg);
 		exit(end);
 	}
 	status = atoi(arg[1]);
 
-	free(linepointer);
+	free(lineptr);
 	free(arg);
 	exit(end);
 }
