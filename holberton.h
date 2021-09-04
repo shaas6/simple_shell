@@ -13,11 +13,11 @@
 /* holds environment variables */
 extern char **environ;
 int path_value(char **arg, char **env);
-void _exitshell(char **arg, char *linepointer, int end);
-int fork_func(char **arg, char **av, char **env, char *linepointer, int id, int c);
+void _exitshell(char **arg, char *lineptr, int end);
+int fork_func(char **arg, char **av, char **env, char *lineptr, int id, int c);
 void new_prompt(void);
 void print_env(char **env);
-char **get_token(char *linepointer);
+char **get_token(char *lineptr);
 char *_getline(void);
 char *getpath(char **env);
 /* string function */
