@@ -21,5 +21,5 @@ void _exitshell(char **arg, char *lineptr, int end)
 
 	free(lineptr);
 	free(arg);
-	exit(end);
+	exit(status);
 }
