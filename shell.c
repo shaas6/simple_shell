@@ -12,7 +12,6 @@ int main(int ac, char **av, char **env)
 {
 	char *getinput = NULL, **userinput = NULL;
 	int pathvalue = 0, end = 0, n = 0;
-
 	(void) ac;
 
 	while (1)
@@ -27,25 +26,25 @@ int main(int ac, char **av, char **env)
 				free(getinput);
 				continue;
 			}
-		if (!_strcmp(userinput[0], "exit") && userinput[1] == NULL)
-			_exitshell(userinput, getinput, end);
-		if (!_strcmp(userinput[0], "env"))
-			print_env(env);
+			if (!_strcmp(userinput[0], "exit") && userinput[1] == NULL)
+				_exitshell(userinput, getinput, end);
+			if (!_strcmp(userinput[0], "env"))
+				print_env(env);
+		else
+			{
+				n = path_value(&userinput[0], env);
+				end = fork_func(userinput, av, env, getinput, pathvalue, n);
+				if (n == 0)
+				free(userinput[0]);
+			}
+			free(userinput);
+		}
 		else
 		{
-			n = path_value(&userinput[0], env);
-			end = fork_func(userinput, av, env, getinput, pathvalue, n);
-			if (n == 0)
-				free(userinput[0]);
+			if (isatty(STDIN_FILENO))
+				write(STDOUT_FILENO, "\n", 1);
+			exit(end);
 		}
-		free(userinput);
-	}
-	else
-	{
-		if (isatty(STDIN_FILENO))
-			write(STDOUT_FILENO, "\n", 1);
-		exit(end);
-	}
-	free(getinput);
+		free(getinput);
 	}
 }
