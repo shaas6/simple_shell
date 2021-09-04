@@ -47,4 +47,5 @@ int main(int ac, char **av, char **env)
 		}
 		free(getinput);
 	}
+	return (0);
 }
